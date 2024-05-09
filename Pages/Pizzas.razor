@@ -1,4 +1,4 @@
-﻿@page "/pizzas"
+﻿@* @page "/pizzas"
 @using BlazingPizza.Data
 @inject PizzaService PizzaSvc
 
@@ -46,4 +46,4 @@ else
     {
         todaysPizzas = await PizzaSvc.GetPizzasAsync();
     }
-}
+} *@
