@@ -18,7 +18,7 @@ public class Address
     [Required, MinLength(3, ErrorMessage = "Please use a City bigger than 3 letters."), MaxLength(50, ErrorMessage = "Please use a City less than 50 letters.")]
     public string City { get; set; }
 
-    [Required, MinLength(3, ErrorMessage = "Please use a Region bigger than 3 letters."), MaxLength(20, ErrorMessage = "Please use a Region less than 20 letters.")]
+    [Required, MinLength(2, ErrorMessage = "Region or State should be  2 letters."), MaxLength(2, ErrorMessage = "Region or State should be  2 letters.")]
     public string Region { get; set; }
 
     [Required, RegularExpression(@"^([0-9]{5})$", ErrorMessage = "Please use a valid Postal Code with five numbers.")]
